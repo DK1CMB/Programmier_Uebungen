@@ -8,12 +8,12 @@ int main() {
 	string word;
 	vector<string> list;
 	do {
-		cout << "Bitte gib ein Wort ein: ";
+		cout << "Bitte gib ein Wort ein: (fertig = Ende) ";
 		cin >> word;
-		if (word != -1) {
+		if (word != "fertig") {
 			list.push_back(word);
 		}
-	}while (word != -1);
+	}while (word != "fertig");
 
 	for (int i{0}; i < list.size(); i++) {
 		cout << list[i] << endl;
